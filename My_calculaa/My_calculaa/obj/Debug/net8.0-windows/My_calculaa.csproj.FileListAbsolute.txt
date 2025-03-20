@@ -1,0 +1,16 @@
+C:\Users\Кононенко чоорт\source\repos\My_calculaa\My_calculaa\bin\Debug\net8.0-windows\My_calculaa.exe
+C:\Users\Кононенко чоорт\source\repos\My_calculaa\My_calculaa\bin\Debug\net8.0-windows\My_calculaa.deps.json
+C:\Users\Кононенко чоорт\source\repos\My_calculaa\My_calculaa\bin\Debug\net8.0-windows\My_calculaa.runtimeconfig.json
+C:\Users\Кононенко чоорт\source\repos\My_calculaa\My_calculaa\bin\Debug\net8.0-windows\My_calculaa.dll
+C:\Users\Кононенко чоорт\source\repos\My_calculaa\My_calculaa\bin\Debug\net8.0-windows\My_calculaa.pdb
+C:\Users\Кононенко чоорт\source\repos\My_calculaa\My_calculaa\obj\Debug\net8.0-windows\My_calculaa.Form1.resources
+C:\Users\Кононенко чоорт\source\repos\My_calculaa\My_calculaa\obj\Debug\net8.0-windows\My_calculaa.csproj.GenerateResource.cache
+C:\Users\Кононенко чоорт\source\repos\My_calculaa\My_calculaa\obj\Debug\net8.0-windows\My_calculaa.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Кононенко чоорт\source\repos\My_calculaa\My_calculaa\obj\Debug\net8.0-windows\My_calculaa.AssemblyInfoInputs.cache
+C:\Users\Кононенко чоорт\source\repos\My_calculaa\My_calculaa\obj\Debug\net8.0-windows\My_calculaa.AssemblyInfo.cs
+C:\Users\Кононенко чоорт\source\repos\My_calculaa\My_calculaa\obj\Debug\net8.0-windows\My_calculaa.csproj.CoreCompileInputs.cache
+C:\Users\Кононенко чоорт\source\repos\My_calculaa\My_calculaa\obj\Debug\net8.0-windows\My_calculaa.dll
+C:\Users\Кононенко чоорт\source\repos\My_calculaa\My_calculaa\obj\Debug\net8.0-windows\refint\My_calculaa.dll
+C:\Users\Кононенко чоорт\source\repos\My_calculaa\My_calculaa\obj\Debug\net8.0-windows\My_calculaa.pdb
+C:\Users\Кононенко чоорт\source\repos\My_calculaa\My_calculaa\obj\Debug\net8.0-windows\My_calculaa.genruntimeconfig.cache
+C:\Users\Кононенко чоорт\source\repos\My_calculaa\My_calculaa\obj\Debug\net8.0-windows\ref\My_calculaa.dll
