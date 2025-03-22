@@ -163,6 +163,7 @@
             tochka.TabIndex = 22;
             tochka.Text = ",";
             tochka.UseVisualStyleBackColor = false;
+            tochka.Click += TochkaOperation;
             // 
             // zero
             // 
@@ -196,6 +197,7 @@
             unarn_min.TabIndex = 20;
             unarn_min.Text = "+/-";
             unarn_min.UseVisualStyleBackColor = false;
+            unarn_min.Click += UnarnMinOperation;
             // 
             // add
             // 
@@ -414,7 +416,7 @@
             division.Name = "division";
             division.Size = new Size(75, 48);
             division.TabIndex = 7;
-            division.Text = "/";
+            division.Text = "÷";
             division.UseVisualStyleBackColor = false;
             division.Click += Easy_operation;
             // 
@@ -433,6 +435,7 @@
             koren.TabIndex = 6;
             koren.Text = "√x";
             koren.UseVisualStyleBackColor = false;
+            koren.Click += SqrtOperation;
             // 
             // square
             // 
@@ -449,6 +452,7 @@
             square.TabIndex = 5;
             square.Text = "x²";
             square.UseVisualStyleBackColor = false;
+            square.Click += DegreeOperation;
             // 
             // one_div_x
             // 
@@ -465,6 +469,7 @@
             one_div_x.TabIndex = 4;
             one_div_x.Text = "1/x";
             one_div_x.UseVisualStyleBackColor = false;
+            one_div_x.Click += DrobOperation;
             // 
             // procent
             // 
@@ -478,6 +483,7 @@
             procent.TabIndex = 3;
             procent.Text = "%";
             procent.UseVisualStyleBackColor = false;
+            procent.Click += ProcentOperation;
             // 
             // half_clear
             // 
@@ -491,6 +497,7 @@
             half_clear.TabIndex = 2;
             half_clear.Text = "CE";
             half_clear.UseVisualStyleBackColor = false;
+            half_clear.Click += ClearOperandOperation;
             // 
             // full_clear
             // 
@@ -504,6 +511,7 @@
             full_clear.TabIndex = 1;
             full_clear.Text = "C";
             full_clear.UseVisualStyleBackColor = false;
+            full_clear.Click += ClearAllOperation;
             // 
             // last_symbol_clear
             // 
@@ -520,6 +528,7 @@
             last_symbol_clear.TabIndex = 0;
             last_symbol_clear.Text = "<=";
             last_symbol_clear.UseVisualStyleBackColor = false;
+            last_symbol_clear.Click += BackSpaceOperation;
             // 
             // Form1
             // 

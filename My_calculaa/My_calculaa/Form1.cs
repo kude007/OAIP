@@ -1,4 +1,6 @@
-namespace My_calculaa
+Ôªønamespace My_calculaa
+
+
 {
     public partial class Form1 : Form
     {
@@ -20,6 +22,7 @@ namespace My_calculaa
             {
                 Output_text.Text = "";
                 Output_text.Text = Output_text.Text + Btn.Text;
+                PressedButton = false;
             }
             else
             {
@@ -40,21 +43,113 @@ namespace My_calculaa
 
         private void Ravno(object sender, EventArgs e)
         {
-            history_text.Text = "ŒÊË‰‡ÌËÂ ‚‚Ó‰‡...";
+            history_text.Text = "–û–∂–∏–¥–∞–Ω–∏–µ –≤–≤–æ–¥–∞...";
 
 
             switch (Operator)
             {
                 case "+":
                     result = Operand + double.Parse(Output_text.Text);
-                    history_text.Text = result.ToString();
+                    history_text.Text = Operand + " + " + double.Parse(Output_text.Text) + " = ";
+                    Output_text.Text = result.ToString();
                     break;
                 case "-":
-                    result = Operand + double.Parse(Output_text.Text);
-                    history_text.Text = result.ToString();
+                    result = Operand - double.Parse(Output_text.Text);
+                    history_text.Text = Operand + " - " + double.Parse(Output_text.Text) + " = ";
+                    Output_text.Text = result.ToString();
+                    break;
+                case "*":
+                    result = Operand * double.Parse(Output_text.Text);
+                    history_text.Text = Operand + " * " + double.Parse(Output_text.Text) + " = ";
+                    Output_text.Text = result.ToString();
+                    break;
+                case "√∑":
+                    result = Operand / double.Parse(Output_text.Text);
+                    history_text.Text = Operand + " √∑ " + double.Parse(Output_text.Text) + " = ";
+                    Output_text.Text = result.ToString();
                     break;
 
             }
+        }
+
+        private void SqrtOperation(object sender, EventArgs e)
+        {
+            Operand = double.Parse(Output_text.Text);
+            if (Operand < 0)
+            {
+                Output_text.Text = "–û—à–∏–±–∫–∞";
+                return;
+            }
+
+            result = Math.Sqrt(Operand);
+            history_text.Text = "‚àö " + Operand + " = ";
+            Output_text.Text = result.ToString();
+
+            PressedButton = true;
+
+        }
+
+        private void DegreeOperation(object sender, EventArgs e)
+        {
+            Operand = double.Parse(Output_text.Text);
+            result = Math.Pow(Operand, 2);
+            history_text.Text = Operand + "¬≤ = ";
+            Output_text.Text = result.ToString();
+        }
+
+        private void UnarnMinOperation(object sender, EventArgs e)
+        {
+            Operand = double.Parse(Output_text.Text);
+            result = Operand * (-1);
+            Output_text.Text = result.ToString();
+        }
+
+        private void TochkaOperation(object sender, EventArgs e)
+        {
+            if (!Output_text.Text.Contains(","))
+            {
+                if (Output_text.Text == "0")
+                {
+                    Output_text.Text = "0";
+                }
+                else
+                {
+                    Output_text.Text += ",";
+                }
+            }
+        }
+
+        private void DrobOperation(object sender, EventArgs e)
+        {
+            Operand = double.Parse(Output_text.Text);
+            result = 1 / Operand;
+            history_text.Text = "1/" + Operand + " = ";
+            Output_text.Text = result.ToString();
+        }
+
+        private void BackSpaceOperation(object sender, EventArgs e)
+        {
+            if (Output_text.Text.Length > 0)
+            {
+                Output_text.Text = Output_text.Text.Remove(Output_text.Text.Length - 1);
+            }
+
+        }
+
+        private void ClearAllOperation(object sender, EventArgs e)
+        {
+            Output_text.Text = Output_text.Text.Remove(Output_text.Text.Length - Output_text.Text.Length);
+            history_text.Text = history_text.Text.Remove(history_text.Text.Length - history_text.Text.Length);
+        }
+
+        private void ClearOperandOperation(object sender, EventArgs e)
+        {
+            Output_text.Text = Output_text.Text.Remove(Output_text.Text.Length - Output_text.Text.Length);
+        }
+
+        private void ProcentOperation(object sender, EventArgs e)
+        {
+
         }
     }
 }
